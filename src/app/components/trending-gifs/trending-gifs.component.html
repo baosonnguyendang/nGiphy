@@ -1,0 +1,8 @@
+<h3>Trending</h3>
+<div class="list" #list>
+    <div *ngFor="let g of trendingGifs" (click)="navigateToDetail(g)">
+        <img src="{{g.images.original.url}}" >
+    </div>
+    <button *ngIf="!isLeftMost" (click)="left()" class="button left"><mat-icon>chevron_left</mat-icon></button>
+    <button *ngIf="!isRightMost" (click)="right()" class="button right"><mat-icon>chevron_right</mat-icon></button>
+</div>

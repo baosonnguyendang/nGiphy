@@ -1,0 +1,7 @@
+<ng-container *ngIf="searchedGifs">
+    <div *ngFor="let count of [].constructor(divWidth().count); let i = index" [ngStyle]="{'width': divWidth().percent}">
+        <div (click)="navigateToDetail(searchedGifs[i + j * divWidth().count])" *ngFor="let count2 of [].constructor(Math.ceil(searchedGifs.length / divWidth().count)); let j = index">
+            <img src="{{searchedGifs[i + j * divWidth().count].images.original.url}}">
+        </div>
+    </div>
+</ng-container>

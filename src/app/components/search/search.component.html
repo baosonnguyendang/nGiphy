@@ -1,0 +1,8 @@
+<div class="logo" (click)="backToHome()"><img src="../../../assets/Transparentt/For Dark Backgrounds/GIPHY Icon DarkBackgrounds 63.png"/></div>
+<mat-form-field class="input">
+    <mat-label>GIF Search</mat-label>
+    <input matInput required placeholder="GIF Search" [(ngModel)]="searchTerm">
+</mat-form-field>
+<button class="button" mat-raised-button color="warn" [routerLink]="searchTerm ? ['search', searchTerm] : ['/']">
+    <mat-icon>search</mat-icon>Search
+</button>

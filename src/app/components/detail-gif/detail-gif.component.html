@@ -1,0 +1,18 @@
+<ng-container *ngIf="data">
+    <div class="container">
+        <div class="container-1">
+            <img src="{{data.user.avatar_url}}"/>
+            <div>
+                <div><b>{{data.user.display_name}}</b></div>
+                <div>@{{data.user.username}}</div>
+            </div>
+        </div>
+        <div class="container-2">
+            <div><b>{{data.title}}</b></div>
+            <img src="{{data.images.original.url}}" />
+        </div>
+        <div class="container-3">
+            <div>Rating: {{data.rating.toUpperCase()}}</div>
+        </div>
+    </div>
+</ng-container>

@@ -1,0 +1,19 @@
+:host {
+    display: flex;
+    flex-wrap: wrap;
+
+    > div {
+
+        > div {
+            padding: 5px;
+            box-sizing: border-box;
+            
+            > img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+        }
+    }
+
+
+}

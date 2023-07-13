@@ -1,0 +1,14 @@
+:host {
+    width: 100vw;
+    max-width: 1400px;
+    padding: 5vh 10vw;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+
+    @media screen and (max-width: 640px) {
+        padding: 5vh 10px;
+    }
+
+}
