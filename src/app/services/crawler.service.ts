@@ -110,7 +110,6 @@ export class CrawlerService {
    * @return Observable
   */
   getDetailGif(): Observable<any> {
-    console.log(this.id())
     const params = {
       api_key: api_key,
       rating: 'g',

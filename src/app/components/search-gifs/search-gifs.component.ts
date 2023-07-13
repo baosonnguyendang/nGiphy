@@ -23,7 +23,6 @@ export class SearchGifsComponent {
     private route: ActivatedRoute,
     private router: Router
   ) {
-    console.log(this.innerWidth);
 
   }
 

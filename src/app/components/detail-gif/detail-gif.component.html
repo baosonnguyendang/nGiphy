@@ -1,11 +1,15 @@
 <ng-container *ngIf="data">
     <div class="container">
-        <div class="container-1">
-            <img src="{{data.user.avatar_url}}"/>
+        <div class="container-11" *ngIf="data.username !== ''">
+            <img src="{{data.user.avatar_url}}" />
             <div>
                 <div><b>{{data.user.display_name}}</b></div>
                 <div>@{{data.user.username}}</div>
             </div>
+        </div>
+        <div *ngIf="data.username === ''" class="container-12">
+            <div><b>Source:</b></div>
+            <div><a href="{{data.source}}">{{data.source.split('//')[1]}}</a></div>
         </div>
         <div class="container-2">
             <div><b>{{data.title}}</b></div>

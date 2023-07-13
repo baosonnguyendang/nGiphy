@@ -24,7 +24,6 @@ export class DetailGifComponent {
         this.crawler.triggerGetDetail(temp[temp.length - 1])
       }),
       this.crawler.getDetailGif().subscribe((gif: any) => {
-        console.log(gif)
         this._data = gif.data;
       }),
     )

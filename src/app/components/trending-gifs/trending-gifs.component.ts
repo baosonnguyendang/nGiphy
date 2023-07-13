@@ -24,7 +24,6 @@ export class TrendingGifsComponent {
   ngOnInit() {
     this._subs.push(
       this.crawler.getTrendingGifs().subscribe((gifs: any) => {
-        console.log(gifs)
         this._trendingGifs = gifs.data;
       }),
     );
